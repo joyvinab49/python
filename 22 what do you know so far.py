@@ -70,6 +70,7 @@ print("int和float可以互相转换")
 print("input()输入的数字是字符串类型的\n")
 
 print(13)
+#https://blog.csdn.net/qq_30815237/article/details/93203934
 print("import xxx 导入模块xxx到程序")
 print("如果写在代码开头就是全局通用 写在函数里面就只有函数里面能用")
 print("from xxx import xx 从模块xxx中引用方法/属性/变量xx")
