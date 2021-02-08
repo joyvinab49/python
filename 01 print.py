@@ -1,4 +1,4 @@
-print("Hello world!",end=" ") #end=""会让两个print显示在同一行
+print("Hello world!", end=" ")  # end=""会让两个print显示在同一行
 print("Hello again!")
 print("I like tping this.")
 print("This is fun")
