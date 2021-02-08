@@ -14,5 +14,5 @@ y = input()  # 字符串 是string
 print(x, y)
 sum1 = x * y  # 这个的结果是将y重复x遍
 print("x * y = ", sum1)
-sum2 = x + float(y) #将y转换成浮点数
+sum2 = x + float(y)  # 将y转换成浮点数
 print("x + y =", sum2)
