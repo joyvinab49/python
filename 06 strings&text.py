@@ -22,22 +22,21 @@ e = "a string with a right side."
 print(w + e)
 
 
+# .format()格式化函数
+# https://www.runoob.com/python/att-string-format.html
 
-#.format()格式化函数
-#https://www.runoob.com/python/att-string-format.html
+# 可以接受不限个参数 位置可以不按顺序
+print("{} {}".format("hello", "world"))  # 不设置指定位置 按默认顺序
+print("{1} {0}".format("hello", "world"))  # 设置指定位置
+print("{1} {0} {1} {0}".format("hello", "world"))
 
-#可以接受不限个参数 位置可以不按顺序
-print("{} {}".format("hello","world")) #不设置指定位置 按默认顺序
-print("{1} {0}".format("hello","world")) #设置指定位置
-print("{1} {0} {1} {0}".format("hello","world"))
+# 可以设置参数
+print("name:{name}, id {id}".format(name="zoe", id="joyvinab"))
 
-#可以设置参数
-print("name:{name}, id {id}".format(name="zoe",id="joyvinab"))
-
-site = {"name":"zoe", "id": "joyvinab"} #通过字典设置参数
+site = {"name": "zoe", "id": "joyvinab"}  # 通过字典设置参数
 print("name:{name}, id {id}".format(**site))
 
-my_list = ["zoe", "joyvinab"] #通过列表索引设置参数
-print("name:{0[0]}, id {0[1]}".format(my_list)) #"0"是必须的
+my_list = ["zoe", "joyvinab"]  # 通过列表索引设置参数
+print("name:{0[0]}, id {0[1]}".format(my_list))  # "0"是必须的
 
-#输出结果都是：name:zoe, id joyvinab
+# 输出结果都是：name:zoe, id joyvinab
