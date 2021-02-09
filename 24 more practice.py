@@ -27,6 +27,7 @@ def secret_formula(started):
 
 
 start_point = 10000
+# secret_formula拿到的三个值分别赋给三个变量
 beans, jars, crates = secret_formula(start_point)
 
 print("With a starting point of: {}".format(start_point))
@@ -37,3 +38,4 @@ start_point = start_point / 10
 print("We can also do that this way:")
 formula = secret_formula(start_point)
 print("We'd have {} beans, {} jars, and {} crates.".format(*formula))
+# *的意思是获取formula的所有值
