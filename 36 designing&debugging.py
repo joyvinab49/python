@@ -117,7 +117,7 @@ def leave():
 
 
 def stuck():
-    print("You seem to not follow the rules in THE HOUSE.")
+    print("You don't seem to follow the rules in THE HOUSE.")
     print("You are stuck in a dark room.")
     print("You try to seek help but fail.")
     print("Finally, you die of hungry.")
