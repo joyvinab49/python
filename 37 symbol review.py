@@ -188,3 +188,25 @@ print(g.send(20))  # 从刚才停下的地方继续运行 send会将20赋值给r
 """%x 十六进制整数 小写字母"""
 """%X 十六进制整数 大写字母"""
 """%f 浮点实数"""
+
+
+
+"""Operator"""
+"""/是除法 可带浮点数"""
+"""//表示整数乘法 取商的整数部分"""
+"""%是求余数的"""
+"""@函数修饰器"""
+"""https://www.jb51.net/article/158533.htm"""
+"""http://c.biancheng.net/view/2270.html"""
+"""https://www.cnblogs.com/daniumiqi/p/12162192.html"""
+"""https://blog.csdn.net/weixin_42205776/article/details/89333359"""
+def t1(fn): # fn 是 t2()
+    def t11(sth): # sth 是 sth
+        print("hi: ",sth)
+        fn(sth)
+    return t11
+@t1
+def t2(sth):
+    print("ok",sth)
+t2("i don't know at all")
+print(t2)
