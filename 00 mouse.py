@@ -34,14 +34,15 @@ def contin(x, y):
 
 def onMouseEvent(event):
     print(event.Position)
-    print("abc")
+    print(target_num)
     # contin(event.Position[0],event.Position[1])
     target_mouse.append(event.Position)
     print("def")
     print(target_mouse)
     keyboard_hook = True
     print("--------------")
-    pyHook.HookManager().UnhookMouse()
+    # if target_num==2:
+    #     pythoncom.PumpWaitingMessages()
     return True
 
 
@@ -54,13 +55,17 @@ def main():
     # print("564")
     hm.HookMouse()
     print("3ds")
-    pythoncom.PumpMessages()
+    while round(time.time() - starttime) == 10:
+        pythoncom.PumpWaitingMessages()
+    # pythoncom.PumpMessages()
     print("12341")
+    # pyHook.HookManager().UnhookMouse()
+    # print("close")
 
 
 if __name__ == "__main__":
-    # while target_num > 0:
-    #     print("aaa")
-    #     target_num -= 1
-
-    main()
+    while target_num > 0:
+        print("aaa")
+        target_num -= 1
+        starttime = time.time()
+        main()
